@@ -1,0 +1,20 @@
+{
+  "name": "flashloan-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "flat": "./flat.sh"
+  },
+  "author": "https://peppersec.com",
+  "license": "MIT",
+  "dependencies": {
+    "openzeppelin-solidity": "^2.3.0"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.0.35",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.26",
+    "truffle-flattener": "^1.4.4"
+  }
+}
