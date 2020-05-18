@@ -1,19 +1,23 @@
 # DyDx flashloan tutorial
 
+Example repo on how to take a flash loan with DyDx from ( https://etherscan.io/address/0x1E0447b19BB6EcFdAe1e4AE1694b0C3659614e4e )
+
 ## Install 
 1. `npm i`
 
 ## Deploy
-1. `cp .env.example .env`
-2. Specify `PRIVATE_KEY` and `GAS_PRICE` in the `.env` file
-3. `npx truffle migrate --network mainnet --reset`
-4. Send a tiny amount of the token you want to borrow to the smart contract. E.g. if you borrow WETH the `FlashloanTaker` has to have 1 wei (one wrapped wei) on the balance.
 
 ## To play in remix
 1. `npm run flat`
 2. Copy content from the `FlashloanTaker.flat.sol` file to the Remix.
 3. Remove the second `pragma experimental ABIEncoderV2;`
-4. Use "At Address" feature to interact with the contract.
+4. Deploy contact with tiny amount of token at the time of deployment
+
+## using truffle migrations
+1. `cp .env.example .env`
+2. Specify `PRIVATE_KEY` and `GAS_PRICE` in the `.env` file
+3. `npx truffle migrate --network mainnet --reset`
+4. Send a tiny amount of the token you want to borrow to the smart contract. E.g. if you borrow WETH the `FlashloanTaker` has to have 1 wei (one wrapped wei) on the balance.
 
 ## Other flashloan providers
 1. [aave](https://github.com/aave/flashloan-box/blob/master/contracts/Flashloan.sol)
