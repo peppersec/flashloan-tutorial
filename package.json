@@ -8,9 +8,7 @@
   },
   "author": "https://peppersec.com",
   "license": "MIT",
-  "dependencies": {
-    "openzeppelin-solidity": "^2.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@truffle/hdwallet-provider": "^1.0.35",
     "dotenv": "^8.2.0",

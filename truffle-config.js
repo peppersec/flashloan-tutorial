@@ -55,7 +55,7 @@ module.exports = {
       provider: () => new HDWalletProvider(process.env.PRIVATE_KEY, 'https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f'),
       network_id: 1,
       gas: 4000000,
-      gasPrice: utils.toWei(process.env.GAS_PRICE, 'gwei'),
+      gasPrice: utils.toWei(process.env.GAS_PRICE || 21, 'gwei'),
       nonce: 3230,
       // confirmations: 0,
       // timeoutBlocks: 200,
